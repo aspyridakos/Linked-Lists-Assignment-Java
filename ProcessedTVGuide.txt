@@ -1,0 +1,3 @@
+User can't watch show ABC2030 as he/she is not finished with a show he/she is watching.
+User can watch show PBS21 as he/she is not watching anything else during that time.
+User can't watch show CBS22 as he/she will begin another show at the same time.
