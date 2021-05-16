@@ -1,4 +1,4 @@
-# Linked-Lists-Assignment-Java
+# Linked Lists Assignment (Java)
 
 COMP249_A4
 
