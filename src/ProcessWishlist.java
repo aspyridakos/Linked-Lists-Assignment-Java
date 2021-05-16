@@ -114,17 +114,7 @@ public class ProcessWishlist {
 					arrWatching.remove(i);
 				}
 			}
-			//Testing watchlist and wishlist arrays
-			/*for (int i=0; i<arrWatching.size();i++) {
-				System.out.println(arrWatching.get(i));
-			}
-			System.out.println();
-			for (int i=0; i<arrWishlist.size();i++) {
-				System.out.println(arrWishlist.get(i));
-				if (list1.find(arrWishlist.get(i))!= null) {
-					System.out.println(list1.find(arrWishlist.get(i)).getNodeData());
-				}
-			}*/	
+
 			for (int i=0; i<arrWatching.size();i++) {	
 				for (int j=0; j<arrWishlist.size();j++) {
 					if (list1.find(arrWatching.get(i))!=null) {
@@ -176,23 +166,23 @@ public class ProcessWishlist {
 		System.out.println("Displaying list2 : \n" + list2);
 		Scanner input = new Scanner(System.in);
 		
-		//test 1
+		//TESTING METHODS
 		System.out.println("\nEnter a show ID:");
-//		String id = input.next();	//throws NoSuchElementException for some weird reason that i could not figure out (used hard-coded values for testing instead)
+
 		String id = "ABC2030";
 		System.out.println(id);
 		System.out.println("\n-------------Testing ShowList contains() method-----------------\n" + list1.contains(id)+ "\n\nNumber of Iterations: " + list1.numIterations);		//tests find and contain method simultaneously
 		System.out.println("\n-------------Testing ShowList find() method-----------------\n" + list1.find(id).getNodeData()+ "\n\nNumber of Iterations: " + list1.numIterations);
-		//test 2 
+ 
 		System.out.println("\nEnter a show ID:");
-//		id = input.next();
+
 		id = null;
 		System.out.println(id);
 		System.out.println("\n-------------Testing ShowList contains() method-----------------\n" + list1.contains(id)+ "\n\nNumber of Iterations: " + list1.numIterations);		//tests find and contain method simultaneously
 		System.out.println("\n-------------Testing ShowList find() method-----------------\n" + list1.find(id)+ "\n\nNumber of Iterations: " + list1.numIterations);
-		//test 3
+
 		System.out.println("\nEnter a show ID:");
-//		id = input.next();
+
 		id = "some invalid id";
 		System.out.println(id);
 		System.out.println("\n-------------Testing ShowList contains() method-----------------\n" + list1.contains(id)+ "\n\nNumber of Iterations: " + list1.numIterations);		//tests find and contain method simultaneously
